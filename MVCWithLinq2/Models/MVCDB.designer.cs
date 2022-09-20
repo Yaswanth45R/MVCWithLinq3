@@ -28,9 +28,9 @@ namespace MVCWithLinq2.Models
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
-    #region Extensibility Method Definitions
-    partial void OnCreated();
-    #endregion
+	#region Extensibility Method Definitions
+	partial void OnCreated();
+	#endregion
 		
 		public MVCDBDataContext() : 
 				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["MVCDBConnectionString"].ConnectionString, mappingSource)
